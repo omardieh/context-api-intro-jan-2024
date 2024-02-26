@@ -1,0 +1,16 @@
+{
+  "name": "coding-family-full-stack",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "fullstack-prod": "NODE_ENV=prod concurrently --kill-others \"npm --prefix ./backend run dev\" \"npm --prefix frontend run dev\"",
+    "fullstack-dev": "set NODE_ENV=dev&&concurrently --kill-others \"npm --prefix ./backend run dev\" \"npm --prefix frontend run dev\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "concurrently": "^8.2.0"
+  }
+}
